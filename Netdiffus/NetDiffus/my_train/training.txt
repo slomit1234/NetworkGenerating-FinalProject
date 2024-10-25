@@ -1,0 +1,35 @@
+add this dir (all the images)
+https://drive.google.com/drive/folders/1C2qr7yy2FptkaemHrrtxeoup-LncWURJ?usp=sharing
+
+if all the packeges from yesterday are already installed, you can just run:
+
+python image_train.py --data_dir /Youtube_img --image_size 128 --num_channels 128 --num_res_blocks 3 --diffusion_steps 1000 --noise_schedule cosine --learn_sigma True --class_cond True --rescale_learned_sigmas False --rescale_timesteps False --lr 1e-4 --batch_size 4
+
+if you do need to re-install:
+pip install torch torchvision torchaudio
+pip install git+https://github.com/openai/guided-diffusion.git blobfile tqdm
+pip install mpi4py
+
+if everything is working it should look like this:
+Logging to 128/iterate/df/synth_models
+creating model and diffusion...
+creating data loader...
+training...
+-------------------------
+| grad_norm  | 2.73     |
+| loss       | 1        |
+| loss_q0    | 1.01     |
+| loss_q1    | 0.993    |
+| loss_q3    | 1.02     |
+| mse        | 0.995    |
+| mse_q0     | 0.997    |
+| mse_q1     | 0.988    |
+| mse_q3     | 1.01     |
+| param_norm | 255      |
+| samples    | 4        |
+| step       | 0        |
+| vb         | 0.00851  |
+| vb_q0      | 0.00848  |
+| vb_q1      | 0.00496  |
+| vb_q3      | 0.0156   |
+-------------------------
