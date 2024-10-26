@@ -15,7 +15,7 @@ D1: YouTube traffic data collected to represent multimedia streaming traffic.
 D2: A publicly available Deep Fingerprinting dataset, widely used in traffic fingerprinting.
 D3: A collection of network traffic data capturing diverse traffic conditions for added variety.
 
-Key Components:
+#### Key Components:
 Dataset Preprocessing
 Purpose: Convert raw traffic data to a format compatible with diffusion models.
 Process: Includes feature extraction (e.g., packet directions and gaps), data normalization, and converting to 2D GASF images.
