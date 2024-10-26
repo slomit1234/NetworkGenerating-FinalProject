@@ -44,14 +44,5 @@ bash
 Copy code
 pip install numpy pandas pyts opencv-python-headless matplotlib scikit-image
 
-## Running the Project
-Dataset Preprocessing:
-Place raw traffic files in DF/vid directory.
-Run preprocess.py to generate GASF images and preprocessed datasets.
-Training the Diffusion Model:
-Use train_model.py to initiate model training on processed data.
-Evaluation:
-Use evaluate.py for calculating FID scores and performing classifier evaluations on generated samples.
-
 ## Acknowledgments
 Special thanks to our instructors, Prof. Amit Dvir and Mr. Chen Hajaj, and to the authors of the Deep Fingerprinting and NetDiffus articles.
