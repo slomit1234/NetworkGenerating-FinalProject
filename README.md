@@ -1,14 +1,14 @@
 # Final-Project
 # NetDiffus: Generating Synthetic Network Data for Security
-# # Project Overview
+## Project Overview
 This project implements the NetDiffus framework to generate synthetic network traffic using advanced machine learning models. The main goal is to create realistic synthetic datasets that support security testing without using sensitive real data, facilitating network security research and application.
 
-# # Objectives
+## Objectives
 Generate synthetic network traffic: To create realistic network data for testing cybersecurity solutions.
 Utilize diffusion models: Leverage diffusion models and data transformations for high-fidelity synthetic data.
 Benchmark against existing datasets: Compare generated data to existing datasets to assess fidelity and reliability.
 
-# # # Dataset Components
+### Dataset Components
 This project leverages three primary datasets:
 D1: YouTube traffic data collected to represent multimedia streaming traffic.
 D2: A publicly available Deep Fingerprinting dataset, widely used in traffic fingerprinting.
@@ -20,23 +20,23 @@ Purpose: Convert raw traffic data to a format compatible with diffusion models.
 Process: Includes feature extraction (e.g., packet directions and gaps), data normalization, and converting to 2D GASF images.
 Normalization Challenges: During processing, different normalization methods were evaluated to match the original dataset’s properties.
 
-# # # Diffusion Model
+### Diffusion Model
 Model Choice: Utilizes diffusion models, which generate data by progressively adding and removing noise.
 Image Transformation: Time-series data transformed into GASF images to leverage 2D model capabilities.
 Training Setup: Training uses large GPU resources, often on platforms like Google Colab, and is fine-tuned with hyperparameter adjustments.
 
-# # #Evaluation and Comparison
+### Evaluation and Comparison
 Metrics: The model's performance is evaluated using:
 Visual inspection of generated data.
 Classifier accuracy trained on synthetic data.
 Unbiased FID scores to assess similarity to real data.
 
-# #Project Setup
+## Project Setup
 Prerequisites:
 Python 3.x
 Required libraries: numpy, pandas, pyts, cv2, matplotlib, scipy, skimage
 
-# # Installation
+## Installation
 Install the necessary libraries:
 
 bash
