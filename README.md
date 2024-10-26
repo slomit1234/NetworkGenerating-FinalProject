@@ -1,7 +1,8 @@
 # Final-Project
 # NetDiffus: Generating Synthetic Network Data for Security
 ## Project Overview
-This project implements the NetDiffus framework to generate synthetic network traffic using advanced machine learning models. The main goal is to create realistic synthetic datasets that support security testing without using sensitive real data, facilitating network security research and application.
+This project implements the NetDiffus framework to generate synthetic network traffic using advanced machine learning models.
+The main goal is to create realistic synthetic datasets that support security testing without using sensitive real data, facilitating network security research and application.
 
 ## Objectives
 Generate synthetic network traffic: To create realistic network data for testing cybersecurity solutions.
